@@ -1,0 +1,153 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 24px ;
+}
+
+.header-logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: grey;
+}
+
+.header-filters{
+    display: flex;
+    gap: 12px;
+}
+.header-actions{
+    display: flex;
+}
+.header-actions div{
+   padding: 12px;
+   color: blue;
+}
+
+.content-and-sidebar{
+    display: flex;
+    background: lightgray;
+}
+
+.sidebar{
+    background: rgb(48, 48, 216);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 54.5px );
+}
+
+
+.sidebar-item{
+    padding: 24px;
+    color: white;
+}
+
+.content-and-breadcrumb{
+    padding: 12px 24px;
+    flex-grow: 1;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background: white;
+    /* width: calc(100vw - 200px); */
+  
+}
+
+.main-section-header{
+    padding: 24px 12px;
+    border-bottom: 1px solid gray;
+
+}
+.main-section-header-text{
+   font-size: 25px;
+   font-weight: bold;
+   color: gray;
+}
+
+
+.filters{
+    background: lightblue;
+    margin-top: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 6px;
+}
+
+.filters-header{
+   color: gray;
+}
+
+
+.filter-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.input-field{
+    width: stretch;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 6px 12px;
+     /* height: 30px; */
+}
+.dropdown-field{
+     width: stretch;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 6px 12px;
+    height: 30px;
+}
+
+
+.filter-actions{
+    display: flex;
+    justify-content: end;
+}
+
+/* filter-action-items */
+
+.button-secondary{
+  background: transparent;
+  border-radius: 4px;
+  color: blue;
+  border: none;
+  outline: none;
+  padding: 12px 6px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.button-primary{
+  background: blue;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 6px;
+  width: 80px;
+  cursor: pointer;
+}
+
+
+.table-container{}
+
+
+.main-table{
+    width: stretch;
+}
